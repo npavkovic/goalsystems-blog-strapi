@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_posts",
+  "info": {
+    "singularName": "blog-post",
+    "pluralName": "blog-posts",
+    "displayName": "BlogPost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "workflow": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published",
+        "needsRewrite",
+        "readyForReview"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "goalSystem",
+        "systemCreator",
+        "blogPost"
+      ]
+    },
+    "author": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "component",
+      "component": "shared.tags",
+      "repeatable": true
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "deck": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "editorialComments": {
+      "type": "richtext"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.article-seo",
+      "repeatable": false
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

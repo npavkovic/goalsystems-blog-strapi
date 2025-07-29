@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "research_papers",
+  "info": {
+    "singularName": "research-paper",
+    "pluralName": "research-papers",
+    "displayName": "ResearchPaper"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "workflow": {
+      "type": "enumeration",
+      "enum": [
+        "researchComplete",
+        "readyForDraft"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "goalSystem",
+        "systemCreator",
+        "blogPost"
+      ]
+    },
+    "tags": {
+      "type": "component",
+      "component": "shared.tags",
+      "repeatable": true
+    },
+    "summary": {
+      "type": "string"
+    },
+    "date_generated": {
+      "type": "datetime"
+    }
+  }
+}

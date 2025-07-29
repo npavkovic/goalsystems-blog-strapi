@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "research_requests",
+  "info": {
+    "singularName": "research-request",
+    "pluralName": "research-requests",
+    "displayName": "ResearchRequest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "workflow": {
+      "type": "enumeration",
+      "enum": [
+        "readyForResearch",
+        "researchInProgress",
+        "researchComplete"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "goalSystem",
+        "systemCreator",
+        "blogPost"
+      ]
+    },
+    "tags": {
+      "type": "component",
+      "component": "shared.tags",
+      "repeatable": true
+    }
+  }
+}

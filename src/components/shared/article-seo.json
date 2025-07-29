@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_article_seos",
+  "info": {
+    "displayName": "articleSeo",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "component",
+      "component": "shared.keywords",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_keywords",
+  "info": {
+    "displayName": "keywords"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -22,8 +22,9 @@
       "enum": [
         "draft",
         "published",
-        "needsRewrite",
-        "readyForReview"
+        "readyForRewrite",
+        "rewriteInProgress",
+        "rewriteComplete"
       ]
     },
     "category": {

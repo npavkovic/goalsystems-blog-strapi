@@ -25,7 +25,9 @@
       "type": "enumeration",
       "enum": [
         "researchComplete",
-        "readyForDraft"
+        "readyForDraft",
+        "draftInProgress",
+        "draftComplete"
       ]
     },
     "category": {
